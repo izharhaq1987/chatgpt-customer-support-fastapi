@@ -1,0 +1,37 @@
+{
+  "info":
+  {
+    "name": "chatgpt-customer-support-fastapi",
+    "_postman_id": "7c2f5e12-1111-2222-3333-abcdefabcdef",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item":
+  [
+    {
+      "name": "Index",
+      "request":
+      {
+        "method": "GET",
+        "url": "{{base_url}}/"
+      }
+    },
+    {
+      "name": "Create Ticket",
+      "request":
+      {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body":
+        {
+          "mode": "raw",
+          "raw": "{\n  \"subject\": \"Refund inquiry\",\n  \"description\": \"Refund my recent purchase\",\n  \"requester_email\": \"user@example.com\",\n  \"priority\": \"high\"\n}"
+        },
+        "url": "{{base_url}}/tickets/"
+      }
+    }
+  ],
+  "variable":
+  [
+    { "key": "base_url", "value": "http://127.0.0.1:8000" }
+  ]
+}

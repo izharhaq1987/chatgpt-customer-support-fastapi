@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.sqlite3
+tickets.db
+.coverage
+dist/
+build/
+.env
