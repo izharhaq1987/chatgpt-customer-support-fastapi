@@ -17,7 +17,7 @@ API Docs
 •	Swagger: /docs
 •	Redoc: /redoc
 ```
-### 18) (Optional) CI: basic pytest workflow
+### (Optional) CI: basic pytest workflow
 **.github/workflows/ci.yml**
 ```yaml
 name: ci
